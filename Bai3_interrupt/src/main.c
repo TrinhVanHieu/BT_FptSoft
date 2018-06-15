@@ -123,7 +123,7 @@ void EXTI0_1_IRQHandler(void)
 				delay(0xff);
 			}
 		}
-		if (state_led > 3) state_led = 0;
+		else state_led = 0;
 	}
 	/*Xoa co ngat*/
 	write_reg (EXTI_PR, (1 << 0)); //xoa co
